@@ -4,15 +4,15 @@ POINTS = 0
 
 def start():
     
-    game = input("Do you want to play again y/n")
+    game = input("Do you want to play again y/n ")
 
-    print("This is highest", POINTS)
+    print("This is the highest {}".format(POINTS))
     
     if game.lower() == "y":
         start_game()
-    
+
     else: 
-        print("Good DAY!")
+        print("Have nice day, goodbye!")
         
     
     
@@ -51,17 +51,19 @@ def start_game():
         
         
         except ValueError as err:
-            print("You need to enter number {}".format(err))
+            print("You need to enter a number {}".format(err))
     
     
     POINTS = attempt 
     
-    
+    print()
     print("You got it!")
+    print()
     print("------------------------------------")
-    print("Game over")
+    print("Game over! ")
     print("------------------------------------")
-    print("THIS attempt", attempt)
+    print()
+    print("This is how many attempts you made: {}".format(attempt))
     start()
 
     
